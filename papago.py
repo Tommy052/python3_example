@@ -3,8 +3,8 @@ import sys
 import urllib.request
 
 
-client_id = "9MedZnoAL1W9OP_LfMl3" # 개발자센터에서 발급받은 Client ID 값
-client_secret = "T4L4RASlfA" # 개발자센터에서 발급받은 Client Secret 값
+client_id = "" # 개발자센터에서 발급받은 Client ID 값
+client_secret = "" # 개발자센터에서 발급받은 Client Secret 값
 encText = urllib.parse.quote("Nice to meet you.")
 data = "source=en&target=ko&text=" + encText
 url = "https://openapi.naver.com/v1/papago/n2mt"

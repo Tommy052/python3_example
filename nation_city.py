@@ -2,14 +2,14 @@ import os
 import sys
 import urllib.request,requests
 
-r = requests.get('https://backend.tripinu.com/nation/city/')
+r = requests.get('https://')
 
 ticket = r.json()
 print(ticket)
 
 for t in ticket:
-    client_id = "9MedZnoAL1W9OP_LfMl3" # 개발자센터에서 발급받은 Client ID 값
-    client_secret = "T4L4RASlfA" # 개발자센터에서 발급받은 Client Secret 값
+    client_id = "" # 개발자센터에서 발급받은 Client ID 값
+    client_secret = "" # 개발자센터에서 발급받은 Client Secret 값
     encText = urllib.parse.quote(t['label'])
     data = "source=en&target=ko&text=" + encText
     url = "https://openapi.naver.com/v1/papago/n2mt"
